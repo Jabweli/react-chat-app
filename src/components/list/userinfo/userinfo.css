@@ -1,0 +1,56 @@
+.userInfo {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user h2 {
+  font-size: 14px;
+}
+
+.user .email {
+  font-size: 11px;
+  color: aliceblue;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icons img {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.info-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .info-icon {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .userInfo.hide {
+    display: none;
+  }
+}

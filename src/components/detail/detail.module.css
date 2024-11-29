@@ -1,0 +1,140 @@
+.detail {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid #dddddd35;
+  padding: 20px;
+  text-align: center;
+}
+
+.user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user h2 {
+  font-size: 20px;
+}
+
+.user p {
+  font-size: 12px;
+  width: 90%;
+}
+
+.info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title span {
+  font-size: 14px;
+}
+
+.title img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: rgba(17, 25, 40, 0.3);
+  cursor: pointer;
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.photoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.photoItem .icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: rgba(17, 25, 40, 0.3);
+  cursor: pointer;
+}
+
+.photoDetail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.photoDetail img {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.photoDetail span {
+  font-size: 12px;
+}
+
+.blockBtn {
+  padding: 10px 20px;
+  background-color: rgba(230, 74, 105, 0.553);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.blockBtn:hover {
+  background-color: rgba(220, 20, 60, 0.796);
+}
+
+.logoutBtn {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #dddddd35;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.logoutBtn:hover {
+  background-color: #dddddd35;
+}
+
+@media screen and (max-width: 1023px) {
+  .detail {
+    position: absolute;
+    background-color: #223870;
+    width: 250px;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: -250px;
+    transition: all ease 0.3s;
+  }
+
+  .detail.show {
+    right: 0;
+  }
+}
